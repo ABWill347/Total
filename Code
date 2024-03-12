@@ -1,0 +1,27 @@
+package totalcost;
+
+public class Total_Cost {
+    public static void main(String[] args) {
+        //   WRITE A PROGRAM THAT CALCULATES TOTAL COST OF USER'S ITEMS
+        String product = "Rice";
+        int price = 25;
+        int qty = 10;
+        int miles = 10;
+        int fee;
+
+        // Fee for Distance
+        if (miles <= 4) {
+            fee = 2;
+        } else if (miles <= 15) {fee = 5;
+        } else if (miles <= 25) {fee = 10;
+        } else if (miles <= 50) {fee = 15;
+        } else {fee = 20;
+        }
+
+        // Total price
+        int total = price + qty + fee;
+
+        System.out.println(qty + " "+  product  + " Is $" + total);
+    }
+}
+
